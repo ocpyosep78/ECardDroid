@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editorView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/toolbar"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/imgHold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:adjustViewBounds="true"
+            android:scaleType="matrix"
+            android:src="@drawable/baseholder" />
+
+        <ImageView
+            android:id="@+id/imgFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/c1_0" />
+
+        <TextView
+            android:id="@+id/quote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgFrame"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="85dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="matrix"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/toolbar"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/TbPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@drawable/t1"
+            android:hapticFeedbackEnabled="true" />
+
+        <ImageButton
+            android:id="@+id/TbCard"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/TbPhoto"
+            android:adjustViewBounds="true"
+            android:background="@drawable/t2"
+            android:hapticFeedbackEnabled="true" />
+
+        <ImageButton
+            android:id="@+id/TbText"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/TbCard"
+            android:layout_weight="1.16"
+            android:adjustViewBounds="true"
+            android:background="@drawable/t3"
+            android:hapticFeedbackEnabled="true" />
+
+        <ImageButton
+            android:id="@+id/TbReset"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:background="@drawable/t4"
+            android:hapticFeedbackEnabled="true" />
+
+        <ImageButton
+            android:id="@+id/TbShare"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.03"
+            android:adjustViewBounds="true"
+            android:background="@drawable/t5"
+            android:hapticFeedbackEnabled="true" />
+    </LinearLayout>
+
+</RelativeLayout>
